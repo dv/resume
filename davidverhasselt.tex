@@ -1,0 +1,186 @@
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.75, top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\RequirePackage{tweaks}
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+\setlength{\hintscolumnwidth}{2.5cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+
+
+% personal data
+\name{David}{Verhasselt}
+\title{Senior Software Engineer, Contractor}
+\address{Tallinn, Estonia \& Ghent, Belgium}
+\phone{+372~559~59~633}
+\email{david@crowdway.com}
+\homepage{www.davidverhasselt.com}
+\social[linkedin]{david.verhasselt}
+\social[twitter]{davidverhasselt}
+\social[github]{dv}
+\extrainfo{Belgian, eligible for work in EU and UK\\willing to relocate}
+
+% \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\setlength{\makecvtitlenamewidth}{400pt}
+\makecvtitle
+
+% \section{Experience}
+% \subsection{Vocational}
+% \cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}%
+% Detailed achievements:%
+% \begin{itemize}%
+% \item Achievement 1;
+% \item Achievement 2, with sub-achievements:
+%   \begin{itemize}%
+%   \item Sub-achievement (a);
+%   \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%     \begin{itemize}
+%     \item Sub-sub-achievement i;
+%     \item Sub-sub-achievement ii;
+%     \item Sub-sub-achievement iii;
+%     \end{itemize}
+%   \item Sub-achievement (c);
+%   \end{itemize}
+% \item Achievement 3.
+% \end{itemize}}
+% \cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
+% \subsection{Miscellaneous}
+% \cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+% TODO: Talk about docker?
+
+\vspace{-10pt}
+\section{Profile}
+Senior software engineer with 5 years of professional web development experience on the back-end and front-end using \textbf{Ruby}, \textbf{Ruby on Rails} and \textbf{Javascript}.
+
+I prefer BDD with Rspec and Capybara and am a big proponent of object oriented best practices like SOLID. I'm active in the open source community and regularly invest time in learning about the latest technologies and keeping my skills up to date.
+
+\vspace{10pt}
+\section{Technical Skills}
+\subsection{Extremely Proficient With}
+\cvline{languages}{Ruby, CoffeeScript, JavaScript, HTML5, CSS3}
+\cvline{technologies}{\small Rails, Rspec, Haml, Sass, Ajax, Git, Vim, Redis, PostgreSQL, Sphinx, Nginx, Facebook APIs, Google APIs, Docker, Backbone.js, jQuery, Bootstrap, Stripe, Oauth}
+% But also: Nanoc, JSON, Bourbon, Compass, Stripe.js, Tropo API, Google Contacts API, Oauth, Facebook API, Facebook Open Graph, Google Calendar API
+\subsection{Have Experience With}
+\cvline{languages}{\small Python, C, C++, PHP, Java, Bash \& Zsh Scripting, Swift, Objective-C, Actionscript 3}
+\cvline{technologies}{\small Scrum, Sinatra, Memcache, CDN, WebGL, MySQL, Elastic Search, Cocoa, Nginx, CUDA, Flex}
+% But also: Solaris, Ubuntu, Debian, CentOS, OSX, Sublime, Latex, VHDL, Haskell, Mozart, Tmux
+
+\vspace{10pt}
+\section{Experience}
+\cventry{2014--2015}{Rails Engineer}{PieSync, Consultant}{}{}{
+  \cvkeywords{Ruby, Ruby on Rails, Coffeescript, Stripe, Ecommerce, Microservices, APIs}
+  Built the Ecommerce subscription functionality for the PieSync SaaS service, integrated with Stripe allowing users to sign-up and pay, and expanded the customer-facing dashboard. Also worked on the internal back-end responsible for synchronizing different APIs. Helped integrate the platform with several different CRM APIs.
+}
+
+\vspace{10pt}
+\cventry{2013--present}{Lead Developer}{ICE Technologies, Consultant}{}{}{
+  \cvkeywords{Ruby on Rails, Google APIs, Domain Registrar APIs, Sphinx, Performance}
+  In charge of gradually upgrading and adding features to the internal management and sales system. Added integration with Google Calendar and Google Contacts, and the ability to register domain names for clients from within the application. Greatly improved performance using memcache and Javascript.
+}
+
+\vspace{10pt}
+\cventry{2013--present}{Lead Developer}{Tightship, Consultant}{}{}{
+  \cvkeywords{Ruby on Rails, Sphinx, Elastic Search, Solaris, Performance}
+  Managed to convert a poorly maintained codebase from Rails 2.1 to Rails 4. Improved performance from 12 seconds per page view to \textless3 seconds using code improvements and careful caching. Refactored away technical debt in line with the client's budget.
+}
+
+\vspace{10pt}
+\cventry{2007--present}{Founder, Developer}{Seenly}{}{}{
+  \cvkeywords{Ruby on Rails, Javascript, Facebook Graph API, Backbone.js, Scalability, PostgreSQL, WebGL}
+  Photobooth-like web app. Created first version using Actionscript 3 and PHP, later completely rewrote it using Ruby on Rails, HTML5 and WebGL. Bootstrapped to 850K unique visitors a month with over 51 million photos taken to date. Integrated with Facebook to allow users to upload photos.
+}
+
+\vspace{10pt}
+\cventry{2014}{Project Manager}{Onio Technologies, Consultant}{}{}{
+  \cvkeywords{Javascript, Ecommerce}
+  Lead internationalization of sales webpage and added multi-currency and VAT-compliance using geo identification to the shopping cart.
+}
+
+\vspace{10pt}
+\cventry{2011--2012}{Rails Engineer}{Reverse Robocall, Consultant}{}{}{
+  \cvkeywords{Ruby on Rails, Heroku, Telephony API, Spree, Authorize.net, Ecommerce}
+  Built web app where users could purchase automated robocalls to politicians. Integrated Spree, a shopping cart environment, with Tropo, a Twilio-like Telephony API, to call users and record their message as part of the purchasing process. Automated sending hundreds of robocalls to politicians.
+  \\
+  \emph{Reverse Robocall was featured on Slashdot and Ars Technica.}
+}
+
+\vspace{10pt}
+\cventry{2008--2010}{Web Application Developer}{Ghent University}{}{}{
+  \cvkeywords{PHP, MySQL, Linux}
+  Maintained and extended the internal administration web app used by over 100 student organizations.
+}
+
+\vspace{10pt}
+\cventry{2004--2008}{Sysadmin}{Student organization Zeus WPI}{}{}{
+  \cvkeywords{Linux, Solaris, Sysadmin}
+  % The student organization for computer enthusiasts at Ghent University. Maintained Linux and Solaris workstations and server park and provided admin services for members. Over the years I held several board positions, including president and treasurer.
+}
+
+\cventry{2003}{Freelance developer}{Matrix Orbital}{}{}{
+  \cvkeywords{Delphi, Microcontrollers, Embedded Systems}
+  % Created an internal test system for their products. Interfaced over RS-232 with several different types of LCD displays. Included over 50 customizable tests the user could schedule for each display.
+}
+
+\vspace{10pt}
+\section{Open Source Contributions}
+Creator of the popular \textbf{redis-semaphore} gem which utilizes Redis to implement distributed semaphores as Dijkstra intended. It includes fail safety using timeouts to guard against client failures.
+
+I have also made significant contributions to other popular open source projects such as Rails, less-rails, acts\_as\_tree and BubbleWrap. See \underline{\href{https://github.com/dv}{my github profile}} for details.
+
+\vspace{10pt}
+\section{Education}
+\cventry{2008--2010}{MS Computer Science Engineering}{Ghent University}{Belgium}{}{}
+\cvitem{\small minor}{\small Information and Communications Technology}
+\cvitem{\small honors}{\small Cum Laude}
+\cventry{2004--2008}{BS Computer Science}{Ghent University}{Belgium}{}{}
+
+\vspace{10pt}
+\section{Master thesis}
+\cvitem{title}{\bfseries{Affine Motion Compensation using Translational
+Motion Vectors on the GPU}}
+\cvitem{supervisors}{Bart Pieters, Stijn Notebaert, Rik Van de Walle}
+\cvitem{}{\small Using CUDA I architected and developed an affine motion compensation process to be run on the GPU, and inserted it into a reference H.264 video encoder to improve video compression without sacrificing speed.}
+
+\vspace{10pt}
+\section{Spoken Languages}
+\cvdoubleitem{\bfseries Dutch}{Excellent (Native)}{\bfseries English}{Excellent}
+\cvdoubleitem{\bfseries French}{Intermediate}{\bfseries German}{Basic}
+\cvdoubleitem{\bfseries Estonian}{Basic}{}{}
+
+% Footer
+\vfill
+\begin{center}
+\small
+\today\hspace{3pt}-- Latest version available on \href{http://www.davidverhasselt.com/resume}{www.davidverhasselt.com/resume} -- Source on \href{http://github.com/dv/resume}{github.com/dv/resume}
+\end{center}
+% \clearpage
+\end{document}
